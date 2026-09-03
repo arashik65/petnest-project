@@ -12,6 +12,13 @@ import {
   TextField,
 } from "@heroui/react";
 const AddPetListingPage = () => {
+    const onSubmit =async(e)=>{
+    e.preventDefault()
+    const formData=new FormData(e.currentTarget)
+    const addpet= Object.fromEntries(formData.entries())
+    console.log(addpet);
+
+}
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-slate-950 py-10 px-4">
       <div className="max-w-3xl mx-auto">
@@ -27,7 +34,7 @@ const AddPetListingPage = () => {
 
         {/* Form Card */}
         <Card className="rounded-2xl shadow-xl border border-default-200">
-          <form className="p-4 md:p-8 space-y-6">
+          <form onSubmit={onSubmit} className="p-4 md:p-8 space-y-6">
             {/* Form Heading */}
             <div>
               <h2 className="text-xl font-semibold">
