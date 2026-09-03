@@ -18,6 +18,18 @@ const AddPetListingPage = () => {
     const addpet= Object.fromEntries(formData.entries())
     console.log(addpet);
 
+    //add petcollection data api call kora hosse
+    const res =await fetch('http://localhost:5001/addpet',{
+      method:'POST',
+      headers:{
+        'content-type':'application/json'
+        
+      },
+      body:JSON.stringify(addpet)
+    })
+    const data = await res.json()
+    console.log(data);
+
 }
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-slate-950 py-10 px-4">
