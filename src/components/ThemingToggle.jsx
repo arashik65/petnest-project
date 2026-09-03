@@ -1,11 +1,4 @@
 
-
-
-
-
-
-
-
 "use client";
 
 import { Sun, Moon } from "@gravity-ui/icons";

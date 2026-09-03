@@ -17,7 +17,7 @@ const Navbar = () => {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
             <Image
-              src="/assests/images/navlogo3.png"
+              src="/assests/images/navlogo2.png"
               width={60}
               height={60}
               alt="PetNest"
