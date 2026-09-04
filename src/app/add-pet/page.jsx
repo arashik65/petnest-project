@@ -11,6 +11,7 @@ import {
   TextArea,
   TextField,
 } from "@heroui/react";
+import toast from "react-hot-toast";
 const AddPetListingPage = () => {
     const onSubmit =async(e)=>{
     e.preventDefault()
@@ -29,6 +30,7 @@ const AddPetListingPage = () => {
     })
     const data = await res.json()
     console.log(data);
+    toast.success("data is added !");
 
 }
   return (

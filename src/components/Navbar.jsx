@@ -39,7 +39,7 @@ const Navbar = () => {
             </Link>
 
             <Link
-              href="/pets"
+              href="/all-pets"
               className="font-medium text-stone-700 dark:text-stone-200 hover:text-orange-600 dark:hover:text-orange-400 transition-colors duration-200"
             >
               All Pets
