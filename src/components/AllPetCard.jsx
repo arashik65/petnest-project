@@ -209,7 +209,7 @@ const AllPetCard = ({ pets = [] }) => {
 
                     {/* View Details */}
                     <Link
-                      href={`/pet/${pet?._id}`}
+                      href={`/all-pets/${pet?._id}`}
                       className="flex h-9 items-center justify-center rounded-lg border border-slate-300 bg-slate-100 text-[11px] font-semibold text-slate-700 transition hover:bg-slate-200 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-200 dark:hover:bg-slate-700"
                     >
                       View Details
@@ -217,7 +217,7 @@ const AllPetCard = ({ pets = [] }) => {
 
                     {/* Add Pet */}
                     <Link
-                      href={`/pet/${pet?._id}/adopt`}
+                      href="/add-pet"
                       className="flex h-9 items-center justify-center rounded-lg bg-orange-500 text-[11px] font-bold text-white transition hover:bg-orange-600"
                     >
                       Add Pet

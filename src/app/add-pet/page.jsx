@@ -17,7 +17,7 @@ const AddPetListingPage = () => {
     e.preventDefault()
     const formData=new FormData(e.currentTarget)
     const addpet= Object.fromEntries(formData.entries())
-    console.log(addpet);
+    console.log(addpet);                           
 
     //add petcollection data api call kora hosse
     const res =await fetch('http://localhost:5001/addpet',{
